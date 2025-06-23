@@ -1,0 +1,9 @@
+.IconList {
+    display: flex;
+    flex-direction: column
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+}
