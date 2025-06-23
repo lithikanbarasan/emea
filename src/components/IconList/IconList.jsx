@@ -25,12 +25,13 @@ const IconList = ({
                 {title}
             </div>
             <div>
-                {listItems.map(item =>
+                {listItems.map((item, index) =>
                     <IconListEntry
                         text={item.text}
                         subtext={item.subtext}
                         icon={item.icon}
                         textColor={textColor}
+                        key={index}
                     />
                     )
                 }
