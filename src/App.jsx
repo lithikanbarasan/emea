@@ -1,6 +1,6 @@
 import Header from "./components/header.jsx"; 
 import Footer from "./components/footer.jsx"; 
-import IconList from "./components/IconList/IconList";
+import IconListPage from "./pages/IconListPage/IconListPage"
 
 import BankIcon from './assets/ListEntryIcons/BankIcon.png'
 import ClockIcon from './assets/ListEntryIcons/ClockIcon.png'
@@ -42,9 +42,15 @@ function App() {
   return (
     <div>
       <Header/>
-      <IconList
+      <IconListPage 
         listItems={listItems}
         title={title}
+        flipped={true}
+      />
+      <IconListPage 
+        listItems={listItems}
+        title={title}
+        flipped={false}
       />
       <Footer/>
     </div>

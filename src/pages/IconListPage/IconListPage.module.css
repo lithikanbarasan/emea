@@ -1,0 +1,30 @@
+.outerContainer {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  width: 100%;             /* full width of parent or page */
+}
+
+.iconListPage {
+    display: flex;
+    height: auto;
+    width: auto;
+    margin: 40px;
+    place-items: center;
+}
+
+.image {
+    height: 20rem;
+}
+
+.list {
+    width: 35rem;
+}
+
+
+.normal {
+  flex-direction: row;
+}
+
+.flipped {
+  flex-direction: row-reverse;
+}
