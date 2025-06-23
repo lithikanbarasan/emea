@@ -1,0 +1,29 @@
+.iconListEntry {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    margin: 20px;
+    height: 3rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 5px;
+    width: 50%;
+}
+
+.textTop {
+    color: var(--textTop-color, #0061f2);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+}
+
+.textBottom {
+    color: #555555;
+    font-size: 0.9rem;
+}
