@@ -5,7 +5,7 @@ import BackgroundImage from '../../assets/ListEntryIcons/ai.webp'; // Replace wi
 const MainPage = () => {
   return (
     <div
-      className={styles.hero}
+      className={styles.main}
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
       <div className={styles.overlay}>

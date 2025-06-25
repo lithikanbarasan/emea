@@ -2,7 +2,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 80vh;
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -13,12 +14,12 @@
 
 /* New: a gradient overlay that blends left-to-right smoothly */
 .overlay {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%);
   padding: 3rem;
   max-width: 750px;
   margin-left: 5%;
   border-radius: 12px;
-  backdrop-filter: blur(2px); /* subtle blur for background behind text */
+  backdrop-filter: blur(1px); /* Slight blur for subtle separation */
 }
 
 .overlay h1 {

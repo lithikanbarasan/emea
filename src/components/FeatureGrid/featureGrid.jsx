@@ -32,6 +32,14 @@ const FeatureGrid = ({
   };
 
   return (
+    <div className={styles.sectionWrapper} style={style}>
+      <div className={styles.header}>
+        <h4 className={styles.subheading}>MEJORA TU NEGOCIO CON HOLDED</h4>
+        <h2 className={styles.heading}>Tu negocio tiene mucho que ganar con un ERP en la nube</h2>
+        <p className={styles.descriptionText}>
+          Conoce todos los beneficios del software de gestión online de Holded, un ERP sencillo para pequeñas y medianas empresas.
+        </p>
+      </div>
     <div className={styles.gridContainer} style={style}>
       {features.map((item, index) => (
         <div className={styles.card} key={index}>
@@ -41,6 +49,7 @@ const FeatureGrid = ({
           <div className={styles.arrow}>→</div>
         </div>
       ))}
+    </div>
     </div>
   );
 };
