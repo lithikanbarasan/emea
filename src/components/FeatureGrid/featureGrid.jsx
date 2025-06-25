@@ -6,23 +6,23 @@ const FeatureGrid = ({
   features = [
     {
       icon: DefaultIcon,
-      title: 'Mayor control',
-      description: 'Contabilidad en orden, más eficiencia e informes que se hacen solos.',
+      title: 'Mobile Apps',
+      description: 'Custom-built iOS and Android apps designed for performance, usability, and scalability.',
     },
     {
       icon: DefaultIcon,
-      title: 'Información siempre actualizada',
-      description: 'Tu información estará siempre disponible. Cuando y donde quieras.',
+      title: 'Healthcare',
+      description: 'Secure digital health platforms that improve access, coordination, and patient engagement.',
     },
     {
       icon: DefaultIcon,
-      title: 'Ahorro de tiempo y dinero',
-      description: 'Automatiza tareas repetitivas y reduce errores costosos.',
+      title: 'Nature',
+      description: 'Tech-driven solutions for sustainability, from conservation tools to climate data platforms.',
     },
     {
       icon: DefaultIcon,
-      title: 'Seguridad garantizada',
-      description: 'Tus datos están protegidos con tecnología de cifrado avanzada.',
+      title: 'Academy',
+      description: 'Modern e-learning systems that enhance online education and streamline knowledge delivery',
     },
   ],
   textColor = '#0061f2',
@@ -34,10 +34,10 @@ const FeatureGrid = ({
   return (
     <div className={styles.sectionWrapper} style={style}>
       <div className={styles.header}>
-        <h4 className={styles.subheading}>MEJORA TU NEGOCIO CON HOLDED</h4>
-        <h2 className={styles.heading}>Tu negocio tiene mucho que ganar con un ERP en la nube</h2>
+        <h4 className={styles.subheading}>Projects EMEA Venture Builder has worked on</h4>
+        <h2 className={styles.heading}>Innovation Across Industries</h2>
         <p className={styles.descriptionText}>
-          Conoce todos los beneficios del software de gestión online de Holded, un ERP sencillo para pequeñas y medianas empresas.
+        We've built powerful solutions across sectors, from mobile to medical, academic to environmental. We are leveraging cutting-edge technology and purposeful design.
         </p>
       </div>
     <div className={styles.gridContainer} style={style}>

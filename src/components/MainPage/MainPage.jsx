@@ -10,17 +10,15 @@ const MainPage = () => {
     >
       <div className={styles.overlay}>
         <h1>
-          <strong>Unlock the power of data and AI</strong>
+          <strong>Empowering Innovation with Custom Software</strong>
           <br />
-          through Federated Learning
+          from Apps to Automation
         </h1>
         <p>
-          The first SaaS platform for privacy-preserving AI model training
-          through Federated Learning. Maximize the value of your data and AI
-          while maintaining privacy and security across data silos, as data is never moved.
+        We specialize in full-cycle software development — from intuitive mobile apps to powerful automation tools and
+  intelligent data analysis solutions. Turn your ideas into scalable, secure, and smart digital products that drive real impact.
         </p>
         <div className={styles.buttonGroup}>
-          <button className={styles.primary}>BOOK A DEMO</button>
           <button className={styles.secondary}>CONTACT US</button>
         </div>
       </div>

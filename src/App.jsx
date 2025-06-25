@@ -1,3 +1,11 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/IconListPage/Home.jsx';
+import Projects from './pages/IconListPage/Projects.jsx';
+import Blog from './pages/IconListPage/Blog.jsx';
+import Contact from './pages/IconListPage/ContactUs.jsx';
+
+import './App.css'
 import Header from "./components/header.jsx"; 
 import Footer from "./components/footer.jsx"; 
 import IconListPage from "./pages/IconListPage/IconListPage";
@@ -10,6 +18,7 @@ import ClockIcon from './assets/ListEntryIcons/ClockIcon.png'
 import DocumentIcon from './assets/ListEntryIcons/DocumentIcon.svg'
 import DownloadIcon from './assets/ListEntryIcons/DownloadIcon.jpg'
 import InfoIcon from './assets/ListEntryIcons/InfoIcon.png'
+import CeoImage from './assets/ListEntryIcons/Neema-photo.jpg';
 
 const listItems = [
   {
@@ -44,34 +53,36 @@ const title = "Mucho más que \"facturas que se hacen solas\""
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <MainPage/>
-      <Ceo
-        // image={PilarImage}
-        quote="Quote from Neema."
-        name="Neema "
-        title="CEO and Founder of EMEA Venture"
-      
-      />
+    <Router>
+      <Header />
 
-      <FeatureGrid
-      />
+      <Routes>
+        {/* Homepage with your full layout */}
+        <Route path="/" element={
+          <>
+            <MainPage />
+            <FeatureGrid />
+            <IconListPage listItems={listItems} title={title} flipped={true} />
+            <IconListPage listItems={listItems} title={title} flipped={false} />
+            <Ceo
+              image={CeoImage}
+              quote="I am an expert in Artificial Intelligence with a strong background in data science, software development, and AI Ethics. I specialize in creating AI solutions that emphasize ethical, transparent, and human-centered approaches. My experience covers software engineering, AI education, and Ethics."
+              name="Neema Balolebwami Nelly"
+              title="CEO and Founder of EMEA Venture Builder"
+            />
+          </>
+        } />
 
-      <IconListPage 
-        listItems={listItems}
-        title={title}
-        flipped={true}
-      />
-      <IconListPage 
-        listItems={listItems}
-        title={title}
-        flipped={false}
-      />
+        
+        
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
       
-      
-      <Footer/>
-    </div>
+      <Footer />
+    </Router>
   );
 }
 

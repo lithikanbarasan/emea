@@ -1,6 +1,7 @@
 // CeoTestimonial.jsx
 import React from 'react';
 import styles from './Ceo.module.css';
+import CeoImage from '../../assets/ListEntryIcons/Neema-photo.jpg';
 
 const Ceo = ({ image, quote, name, title }) => {
   return (
