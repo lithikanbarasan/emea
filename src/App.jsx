@@ -66,7 +66,7 @@ function App() {
       <IconListPage 
         listItems={listItems}
         title={title}
-        flipped={false}Add commentMore actions
+        flipped={false}
       />
       
       
