@@ -2,7 +2,7 @@ import Header from "./components/header.jsx";
 import Footer from "./components/footer.jsx"; 
 import IconListEntry from "./components/IconListEntry/IconListEntry";
 import FeatureGrid from "./components/FeatureGrid/featureGrid.jsx";
-import MainPage from "./components/MainPage/MainPage.jsx"
+import MainPage from "./components/MainPage/MainPage.jsx";
 
 
 function App() {
