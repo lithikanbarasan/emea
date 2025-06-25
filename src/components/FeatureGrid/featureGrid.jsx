@@ -3,25 +3,30 @@ import styles from './featureGrid.module.css';
 import DefaultIcon from '../../assets/ListEntryIcons/DocumentIcon.svg'; // Replace with a real default icon if needed
 import { Link } from 'react-router-dom';
 
+import MobileIcon from '../../assets/ListEntryIcons/MobileIcon.svg';
+import HealthcareIcon from '../../assets/ListEntryIcons/HealthcareIcon.svg';
+import NatureIcon from '../../assets/ListEntryIcons/NatureIcon.svg';
+import AcademyIcon from '../../assets/ListEntryIcons/AcademyIcon.svg';
+
 const FeatureGrid = ({
   features = [
     {
-      icon: DefaultIcon,
+      icon: MobileIcon,
       title: 'Mobile Apps',
       description: 'Custom-built iOS and Android apps designed for performance, usability, and scalability.',
     },
     {
-      icon: DefaultIcon,
+      icon: HealthcareIcon,
       title: 'Healthcare',
       description: 'Secure digital health platforms that improve access, coordination, and patient engagement.',
     },
     {
-      icon: DefaultIcon,
+      icon: NatureIcon,
       title: 'Nature',
       description: 'Tech-driven solutions for sustainability, from conservation tools to climate data platforms.',
     },
     {
-      icon: DefaultIcon,
+      icon: AcademyIcon,
       title: 'Academy',
       description: 'Modern e-learning systems that enhance online education and streamline knowledge delivery',
     },

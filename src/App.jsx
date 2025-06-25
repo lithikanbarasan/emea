@@ -24,32 +24,32 @@ import CeoImage from './assets/ListEntryIcons/Neema-photo.jpg';
 const listItems = [
   {
     icon: ClockIcon,
-    text: "Ahorra tiempo optimizando la facturación de tu negocio",
-    subtext: "La automatización de tus facturas te permitirá reducir el tiempo que dedicas a tu facturación y emplearlo para mejorar tu negocio."
+    text: "Automate your workflows and save hours",
+    subtext: "We design systems that automate repetitive business processes, freeing up your team to focus on what matters most.."
   },
   {
     icon: DocumentIcon,
-    text: "Programa recibos y facturas recurrentes",
-    subtext: "Solo asigna un día de emisión, un intervalo de tiempo, y se irán enviando automáticamente."
+    text: "Custom mobile apps, built for users",
+    subtext: "From concept to App Store, we develop sleek and scalable mobile apps tailored to your audience and platform."
   },
   {
     icon: DownloadIcon,
-    text: "Centraliza tus gastos en el Inbox",
-    subtext: "Inbox es el buzón en el que podrás organizar y clasificar todos los archivos que recibas."
+    text: "Streamline your operations",
+    subtext: "Centralize your business tools, APIs, and data pipelines into one intuitive system to cut costs and increase speed."
   },
   {
     icon: InfoIcon,
-    text: "Permite a tus clientes acceder a toda su información",
-    subtext: "A través del Portal del Cliente tus contactos podrán consultar la información que compartas con ellos: presupestos, facturas..."
+    text: "Predict trends with advanced analytics",
+    subtext: "Harness AI and machine learning to uncover insights and predict outcomes — from user behavior to business growth."
   },
   {
     icon: BankIcon,
-    text: "Mantente al día de la legislación con la facturación electrónica",
-    subtext: "Con Holded puedes emitir facturas electrónicas a organismos públicos."
+    text: "Smart tools, tailored for your business",
+    subtext: "Every product we build is purpose-driven: built from the ground up to support your processes, customers, and goals."
   }
 ]
 
-const title = "Mucho más que \"facturas que se hacen solas\""
+const title = "Smart Tech That Grows With Your Business"
 
 
 function App() {

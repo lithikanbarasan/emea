@@ -14,6 +14,11 @@
   font-size: 1.2rem;
 }
 
+.logoImage {
+  height: 90px;
+  width: auto;
+}
+
 .nav {
   display: flex;
   gap: 40px;
