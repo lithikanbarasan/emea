@@ -13,7 +13,7 @@ function Footer() {
     </div>
 
     <div className={styles.right}>
-      <a href="https://www.linkedin.com/in/neema-balolebwami-nelly-8a2226107/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/company/emea-venture/" target="_blank" rel="noopener noreferrer">
         <FaLinkedin className={styles.icon} />
       </a>
       <a href="https://www.instagram.com/speaker_nema/" target="_blank" rel="noopener noreferrer">

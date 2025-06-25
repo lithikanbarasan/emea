@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './MainPage.module.css';
 import BackgroundImage from '../../assets/ListEntryIcons/ai.webp'; // Replace with your image path
+import { Link } from 'react-router-dom';
 
 const MainPage = () => {
   return (
@@ -19,7 +20,7 @@ const MainPage = () => {
   intelligent data analysis solutions. Turn your ideas into scalable, secure, and smart digital products that drive real impact.
         </p>
         <div className={styles.buttonGroup}>
-          <button className={styles.secondary}>CONTACT US</button>
+        <Link to="/contact" className={styles.secondary}>CONTACT US</Link>
         </div>
       </div>
     </div>

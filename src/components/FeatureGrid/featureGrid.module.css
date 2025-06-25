@@ -50,7 +50,11 @@
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
+  text-decoration: none;      /* NEW: remove link underline */
+  color: inherit;             /* NEW: inherit text color */
+  display: block;             /* ensure block behavior for <Link> */
 }
+
 
 .card:hover {
   transform: translateY(-5px);

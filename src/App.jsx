@@ -12,6 +12,7 @@ import IconListPage from "./pages/IconListPage/IconListPage";
 import FeatureGrid from "./components/FeatureGrid/featureGrid.jsx";
 import MainPage from "./components/MainPage/MainPage.jsx";
 import Ceo from "./components/Ceo/Ceo.jsx";
+import TagList from "./components/TagList/TagList.jsx";
 
 import BankIcon from './assets/ListEntryIcons/BankIcon.png'
 import ClockIcon from './assets/ListEntryIcons/ClockIcon.png'

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './featureGrid.module.css';
 import DefaultIcon from '../../assets/ListEntryIcons/DocumentIcon.svg'; // Replace with a real default icon if needed
+import { Link } from 'react-router-dom';
 
 const FeatureGrid = ({
   features = [
@@ -43,10 +44,13 @@ const FeatureGrid = ({
     <div className={styles.gridContainer} style={style}>
       {features.map((item, index) => (
         <div className={styles.card} key={index}>
-          <img src={item.icon} alt={item.title} className={styles.icon} />
-          <div className={styles.title}>{item.title}</div>
-          <div className={styles.description}>{item.description}</div>
-          <div className={styles.arrow}>→</div>
+          <Link to="/projects" className={styles.card} key={index}>
+  <img src={item.icon} alt={item.title} className={styles.icon} />
+  <div className={styles.title}>{item.title}</div>
+  <div className={styles.description}>{item.description}</div>
+  <div className={styles.arrow}>→</div>
+</Link>
+
         </div>
       ))}
     </div>
