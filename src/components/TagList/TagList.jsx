@@ -5,10 +5,15 @@ const exampleTags = [
   'Python',
   'JavaScript',
   'React',
+  'MySQL',
   'React Native',
   'Flutter',
   'Swift',
   'HTML',
+  'Java',
+  'PHP',
+  'Figma',
+  'MongoDB'
 ];
 
 const TagList = ({
