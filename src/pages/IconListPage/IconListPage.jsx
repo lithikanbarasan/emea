@@ -5,7 +5,7 @@ import styles from "./IconListPage.module.css"
 const IconListPage = ({
     image=Graph, // Image to display next to the list
     title="Example Title",
-    textColor='#0061f2',
+    textColor='#495981',
     listItems=[],
     flipped=false,
 }) => {
