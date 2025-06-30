@@ -85,27 +85,27 @@ const listItems3 = [
   {
     icon: ClockIcon,
     text: "Built for any platform",
-    subtext: "Whether your users are on Android, iOS, or both, we’ve got you covered. Apps are tailored to each platform’s best practices and performance."
+    subtext: "We develop applications for Android and iOS platforms that adhere to the design and performance standards to each operating system"
   },
   {
     icon: DocumentIcon,
     text: "Smart features powered by AI",
-    subtext: "Add intelligent tools like chat assistants, content generation, or smart suggestions. Your app adapts to users and delivers experiences they remember."
+    subtext: "We build applications with AI-powered tools like chat assistants and recommendation tools to enhance user experience and satisfaction"
   },
   {
     icon: DownloadIcon,
     text: "Scalable back-end systems",
-    subtext: "From startup MVPs to global apps—we build infrastructure that grows with you. Real-time sync, cloud hosting, and modular architecture built-in."
+    subtext: "We design back‑end systems that scale to global user bases by leveraging real‑time data synchronization across platforms seamlessly"
   },
   {
     icon: InfoIcon,
     text: "Offline-friendly design",
-    subtext: "No internet? No problem. Your app stays functional on planes, in tunnels, or on the go. Syncs resume automatically when the connection’s back."
+    subtext: "No internet? No problem. We build mobile apps that function fully offline and synchronize data once internet connection is restored"
   },
   {
     icon: BankIcon,
     text: "Built-in growth tools",
-    subtext: "Track what features users love and test new ones before full rollout. Built-in analytics, feedback collection, and A/B testing help you optimize."
+    subtext: "We embed analytics, engagement tracking, and A/B testing tools to drive data‑informed growth and continual optimization across products"
   }
 ]
 
@@ -147,7 +147,7 @@ function App() {
             
             <Ceo
               image={CeoImage}
-              quote="I am an expert in Artificial Intelligence with a strong background in data science, software development, and AI Ethics. I specialize in creating AI solutions that emphasize ethical, transparent, and human-centered approaches. My experience covers software engineering, AI education, and Ethics."
+              quote="I am an expert in Artificial Intelligence with a strong background in data science, software development, and AI Ethics. I specialize in developing AI systems that are fair, transparent and human-centered. My experience covers software engineering, AI education, and Ethical training."
               name="Neema Balolebwami Nelly"
               title="CEO and Founder of EMEA Venture Builder"
             />

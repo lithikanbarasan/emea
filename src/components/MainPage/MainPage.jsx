@@ -11,13 +11,11 @@ const MainPage = () => {
     >
       <div className={styles.overlay}>
         <h1>
-          <strong>Empowering Innovation with Custom Software</strong>
-          <br />
-          from Apps to Automation
+          <strong>We develop AI based software from apps to automation tools</strong>
+          
         </h1>
         <p>
-        We specialize in full-cycle software development — from intuitive mobile apps to powerful automation tools and
-  intelligent data analysis solutions. Turn your ideas into scalable, secure, and smart digital products that drive real impact.
+        We specialize in full-cycle software development from designing intuitive mobile apps to building powerful automation such as machine learning, predictive systems, data analytics. We turn your idea into scalable, secure, smart, and innovative solutions
         </p>
         <div className={styles.buttonGroup}>
         <Link to="/contact" className={styles.secondary}>CONTACT US</Link>

@@ -17,8 +17,8 @@ const exampleTags = [
 ];
 
 const TagList = ({
-    title="Build anything with the right technology",
-    text="We provide flexible software solutions using modern programming languages and frameworks tailored to your business needs.",
+    title="Build anything, automate tasks with responsible AI",
+    text="We develop AI-based software using modern programming languages and frameworks tailored to your business needs",
     tags=exampleTags
 }) => {
     return (

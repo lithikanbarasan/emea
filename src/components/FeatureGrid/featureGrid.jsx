@@ -13,22 +13,22 @@ const FeatureGrid = ({
     {
       icon: MobileIcon,
       title: 'Mobile Apps',
-      description: 'Custom-built iOS and Android apps designed for performance, usability, and scalability.',
+      description: 'Custom-built iOS and Android apps designed for performance usability and scalability',
     },
     {
       icon: HealthcareIcon,
       title: 'Healthcare',
-      description: 'Secure digital health platforms that improve access, coordination, and patient engagement.',
+      description: 'AI-based software for medical diagnosis, predictive analysis and disease detection',
     },
     {
       icon: NatureIcon,
-      title: 'Nature',
-      description: 'Tech-driven solutions for sustainability, from conservation tools to climate data platforms.',
+      title: 'Machine Learning',
+      description: 'Data analysis platforms for process automation, real time insights and optimization',
     },
     {
       icon: AcademyIcon,
       title: 'Academy',
-      description: 'Modern e-learning systems that enhance online education and streamline knowledge delivery',
+      description: 'NEEMA AI training for ethical AI covering algorithmic fairness privacy to AI governance',
     },
   ],
   textColor = '#0061f2',
@@ -40,10 +40,10 @@ const FeatureGrid = ({
   return (
     <div className={styles.sectionWrapper} style={style}>
       <div className={styles.header}>
-        <h4 className={styles.subheading}>Projects EMEA Venture Builder has worked on</h4>
+        <h4 className={styles.subheading}>Projects we have worked on</h4>
         <h2 className={styles.heading}>Innovation Across Industries</h2>
         <p className={styles.descriptionText}>
-        We've built powerful solutions across sectors, from mobile to medical, academic to environmental. We are leveraging cutting-edge technology and purposeful design.
+        We’ve built powerful AI-driven solutions from LLM-powered chatbots to machine learning prediction real-time data analytics platforms that transform how organizations make decisions and operate
         </p>
       </div>
     <div className={styles.gridContainer} style={style}>
