@@ -1,6 +1,6 @@
 .outerContainer {
   display: flex;
-  justify-content: center; /* center horizontally */
+  justify-content: left; /* center horizontally */
   width: 100%;             /* full width of parent or page */
 }
 
@@ -9,11 +9,12 @@
     height: auto;
     width: auto;
     margin: 40px;
+    margin-left: 100px;
     place-items: center;
 }
 
 .image {
-    height: 30rem;
+    height: 33rem;
     margin: 3rem;
 }
 

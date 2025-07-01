@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './header.module.css';
-import Logo from '../assets/ListEntryIcons/emea_venture_logo.jpeg'; // adjust path if needed
+import Logo from '../assets/ListEntryIcons/emea_venture_logo.png'; // adjust path if needed
 
 
 function Header() {

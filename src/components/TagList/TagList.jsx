@@ -13,7 +13,6 @@ const exampleTags = [
   'Java',
   'PHP',
   'Figma',
-  'MongoDB'
 ];
 
 const TagList = ({

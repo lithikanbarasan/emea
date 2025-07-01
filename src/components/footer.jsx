@@ -9,18 +9,21 @@ function Footer() {
   <div className={styles.footerContent}>
     <div className={styles.left}>
       <Link to="/" className={styles.logo}>EMEA Venture Builder</Link>
-      <p className={styles.copyright}>© 2025 EMEA Venture. Todos los derechos reservados.</p>
-    </div>
-
-    <div className={styles.right}>
-      <a href="https://www.linkedin.com/company/emea-venture/" target="_blank" rel="noopener noreferrer">
-        <FaLinkedin className={styles.icon} />
-      </a>
-      <a href="https://www.instagram.com/speaker_nema/" target="_blank" rel="noopener noreferrer">
-        <FaInstagram className={styles.icon} />
-      </a>
       <Link to="/contact" className={styles.contactButton}>Contact Us</Link>
     </div>
+
+    <div className={styles.center}>
+      <div className={styles.socialIcons}>
+        <a href="https://www.linkedin.com/company/emea-venture/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin className={styles.icon} />
+        </a>
+        <a href="https://www.instagram.com/speaker_nema/" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className={styles.icon} />
+        </a>
+      </div>
+      <p className={styles.copyright}>© 2025 EMEA Venture. All rights reserved.</p>
+      </div>
+      
   </div>
 </footer>
   );

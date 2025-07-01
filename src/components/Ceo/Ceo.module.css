@@ -6,7 +6,7 @@
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    margin: 2rem auto;
+    margin: 4rem auto;
     max-width: 1150px;
   }
   
@@ -38,11 +38,18 @@
   .name {
     font-weight: bold;
     margin-bottom: 0.3rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   
   .title {
     color: #80bfff;
     font-size: 0.95rem;
+  }
+
+  .icon {
+    color: #d0d6dd;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    opacity: 0.7;
   }
   
