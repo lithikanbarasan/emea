@@ -52,4 +52,9 @@
     transition: color 0.3s ease;
     opacity: 0.7;
   }
+
+  .founder {
+    width: fit-content;
+    justify-items:center;
+  }
   

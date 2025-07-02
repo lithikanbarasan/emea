@@ -12,10 +12,13 @@ const Ceo = ({ image, quote, name, title }) => {
       <div className={styles.textSection}>
         <p className={styles.quote}>"{quote}"</p>
         <p className={styles.name}>{name}</p>
-        <p className={styles.title}>{title}</p>
-        <a href="https://www.linkedin.com/in/neema-balolebwami-nelly-8a2226107/" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className={styles.icon} />
-        </a>
+        <div className={styles.founder}>
+          <p className={styles.title}>{title}</p>
+          <a href="https://www.linkedin.com/in/neema-balolebwami-nelly-8a2226107/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className={styles.icon} />
+          </a>
+        </div>
+        
       </div>
     </div>
   );
