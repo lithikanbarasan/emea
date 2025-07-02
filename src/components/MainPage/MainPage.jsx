@@ -1,14 +1,22 @@
 import React from 'react';
 import styles from './MainPage.module.css';
-import BackgroundImage from '../../assets/ListEntryIcons/ai.webp'; // Replace with your image path
+import BackgroundVideo from '../../assets/ListEntryIcons/mainpage.mp4'; // Replace with your image path
 import { Link } from 'react-router-dom';
 
 const MainPage = () => {
   return (
     <div
-      className={styles.main}
-      style={{ backgroundImage: `url(${BackgroundImage})` }}
-    >
+      className={styles.main}>
+    <video
+        className={styles.videoBackground}
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src={BackgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className={styles.overlay}>
         <h1>
           <strong>We develop AI based software from apps to automation tools</strong>
