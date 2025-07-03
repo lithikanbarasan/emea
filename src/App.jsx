@@ -14,23 +14,23 @@ import MainPage from "./components/MainPage/MainPage.jsx";
 import Ceo from "./components/Ceo/Ceo.jsx";
 import TagList from "./components/TagList/TagList.jsx";
 
-import ProcessDesign from './assets/ListEntryIcons/hierarchy-3.png'
-import MessageHandling from './assets/ListEntryIcons/mail-check.png'
-import SystemIntegration from './assets/ListEntryIcons/devices-bolt.png'
-import PerformanceDashboards from './assets/ListEntryIcons/presentation-analytics.png'
-import EnterpriseSecurity from './assets/ListEntryIcons/lock.png'
+import ProcessDesign from './assets/ListEntryIcons/Icons/hierarchy-3.png'
+import MessageHandling from './assets/ListEntryIcons/Icons/mail-check.png'
+import SystemIntegration from './assets/ListEntryIcons/Icons/devices-bolt.png'
+import PerformanceDashboards from './assets/ListEntryIcons/Icons/presentation-analytics.png'
+import EnterpriseSecurity from './assets/ListEntryIcons/Icons/lock.png'
 
-import DataSetup from './assets/ListEntryIcons/database-star.png'
-import ForecastingModels from './assets/ListEntryIcons/presentation.png'
-import TailoredBusiness from './assets/ListEntryIcons/adjustments.png'
-import ClearInsights from './assets/ListEntryIcons/file-search.png'
-import LongtermReliability from './assets/ListEntryIcons/clock-shield.png'
+import DataSetup from './assets/ListEntryIcons/Icons/database-star.png'
+import ForecastingModels from './assets/ListEntryIcons/Icons/presentation.png'
+import TailoredBusiness from './assets/ListEntryIcons/Icons/adjustments.png'
+import ClearInsights from './assets/ListEntryIcons/Icons/file-search.png'
+import LongtermReliability from './assets/ListEntryIcons/Icons/clock-shield.png'
 
-import AnyPlatform from './assets/ListEntryIcons/device-mobile-message.png'
-import SmartFeatures from './assets/ListEntryIcons/cpu.png'
-import ScalableSystems from './assets/ListEntryIcons/server-2.png'
-import OfflineFriendly from './assets/ListEntryIcons/wifi-off.png'
-import GrowthTools from './assets/ListEntryIcons/settings-share.png'
+import AnyPlatform from './assets/ListEntryIcons/Icons/device-mobile-message.png'
+import SmartFeatures from './assets/ListEntryIcons/Icons/cpu.png'
+import ScalableSystems from './assets/ListEntryIcons/Icons/server-2.png'
+import OfflineFriendly from './assets/ListEntryIcons/Icons/wifi-off.png'
+import GrowthTools from './assets/ListEntryIcons/Icons/settings-share.png'
 
 import CeoImage from './assets/ListEntryIcons/Neema-photo.jpg';
 
@@ -46,8 +46,8 @@ const listItems = [
   },
   {
     icon: MessageHandling,
-    text: "Email & message handling",
-    subtext: "Our systems read and understand incoming messages from clients or systems, triggering automatic actions like assigning tasks or updating platforms"
+    text: "Automated Market Research",
+    subtext: "We build software that automates market research by analyzing third‑party data and detecting emerging trends in real time"
   },
   {
     icon: SystemIntegration,

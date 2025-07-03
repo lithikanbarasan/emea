@@ -8,9 +8,10 @@ Top text is bolded and serves as the main point while the bottom is unbolded and
 */
 const IconListEntry = ({
     icon=DocumentIcon,
+    iconSize=3,
     text='default text',
     subtext='default subtext',
-    textColor = '#0061f2'
+    textColor = '#0061f2',
 }) => {
     const style = {
         '--textTop-color': textColor
