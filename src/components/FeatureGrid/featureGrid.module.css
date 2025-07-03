@@ -11,7 +11,7 @@
 }
 
 .subheading {
-  color: #0061f2;
+  color: #0B3B7B;
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 0.8rem;
@@ -68,7 +68,7 @@
 .title {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--textTop-color, #0061f2);
+  color: #0B3B7B;
   margin-bottom: 0.5rem;
 }
 
@@ -80,5 +80,5 @@
 
 .arrow {
   font-size: 1.2rem;
-  color: #0061f2;
+  color: #0B3B7B;
 }
