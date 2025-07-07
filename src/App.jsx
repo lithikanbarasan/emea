@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/IconListPage/Home.jsx';
-import Projects from './pages/IconListPage/Projects.jsx';
 import Blog from './pages/IconListPage/Blog.jsx';
 import Contact from './pages/IconListPage/ContactUs.jsx';
 
@@ -37,6 +36,11 @@ import CeoImage from './assets/ListEntryIcons/Neema-photo.jpg';
 import TaskAutomationImage from './assets/IconListPage/Task Automation.svg'
 import MobileDevelopmentImage from './assets/IconListPage/Mobile Development.svg'
 import PredictiveAnalyticsImage from './assets/IconListPage/Predictive Analytics.svg'
+
+import MobileApps from './projectpages/MobileApps.jsx';
+import Healthcare from './projectpages/Healthcare.jsx';
+import MachineLearning from './projectpages/MachineLearning.jsx';
+import Academy from './projectpages/Academy.jsx';
 
 const listItems = [
   {
@@ -181,9 +185,13 @@ function App() {
         
         
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+
+        <Route path="/mobile-apps" element={<MobileApps />} />
+        <Route path="/healthcare" element={<Healthcare />} />
+        <Route path="/machine-learning" element={<MachineLearning />} />
+        <Route path="/academy" element={<Academy />} />
       </Routes>
       
       <Footer />
