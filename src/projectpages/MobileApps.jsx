@@ -24,7 +24,7 @@ const CircleNumber = ({ number }) => (
 );
 
 const MobileApps = () => (
-  <div style={{ padding: '3rem 1.5rem', fontFamily: 'Arial, sans-serif', lineHeight: '1.6', maxWidth: '1200px', margin: '0 auto' }}>
+  <div style={{ padding: '1.5rem 1.5rem', fontFamily: 'Arial, sans-serif', lineHeight: '1.6', maxWidth: '1200px', margin: '0 auto' }}>
     {/* Hero Image */}
     <img
       src={MobileAppsImg}
@@ -34,7 +34,7 @@ const MobileApps = () => (
         maxHeight: '600px',
         objectFit: 'cover',
         borderRadius: '12px',
-        marginBottom: '1rem'
+        marginBottom: '1rem',
       }}
     />
 
