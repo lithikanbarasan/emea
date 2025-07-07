@@ -1,8 +1,30 @@
 import React from 'react';
 import MobileAppsImg from '../assets/projectSectionImages/mobile1.png';
+import TaskReminderImg from '../assets/screenshots/mobpic1.png';
+import ActivityTrackingImg from '../assets/screenshots/mobpic2.png';
+import EOGDoctorImg from '../assets/screenshots/mobpic1.png';
+import AwarenessForumImg from '../assets/screenshots/mobpic4.png';
+
+const CircleNumber = ({ number }) => (
+  <span style={{
+    backgroundColor: '#003366',
+    color: 'white',
+    borderRadius: '50%',
+    width: '30px',
+    height: '30px',
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontWeight: 'bold',
+    fontSize: '1rem',
+    marginRight: '0.5rem'
+  }}>
+    {number}
+  </span>
+);
 
 const MobileApps = () => (
-  <div style={{ padding: '2rem', fontFamily: 'Arial, sans-serif', lineHeight: '1.6' }}>
+  <div style={{ padding: '3rem 1.5rem', fontFamily: 'Arial, sans-serif', lineHeight: '1.6', maxWidth: '1200px', margin: '0 auto' }}>
     {/* Hero Image */}
     <img
       src={MobileAppsImg}
@@ -12,124 +34,114 @@ const MobileApps = () => (
         maxHeight: '600px',
         objectFit: 'cover',
         borderRadius: '12px',
-        marginBottom: '1.5rem'
+        marginBottom: '1rem'
       }}
     />
 
-    {/* Introductory Header */}
-    <h1 style={{ fontSize: '2.5rem', fontWeight: '700', color: '#000', marginBottom: '0.5rem' }}>
-      Mobile App Projects
-    </h1>
-    
+    {/* Header */}
+    <h1 style={{
+  fontSize: '2.5rem',
+  fontWeight: '900',
+  color: '#000',
+  marginBottom: '2rem',
+  fontFamily: 'system-ui, sans-serif'
+}}>
+  Mobile Development
+</h1>
 
-    {/* Divider */}
     <hr style={{ margin: '2rem 0', borderTop: '1px solid #ccc' }} />
 
-    {/* === ADHD Support App for Women === */}
-    <h2 style={{ fontSize: '1.5rem', color: '#003366', fontWeight: '600', marginBottom: '0.5rem' }}>
-      ADHD Support App for Women
-    </h2>
-    <p style={{ color: '#555' }}><strong>Category:</strong> Mobile Apps</p>
-    <p style={{ color: '#555', marginBottom: '1rem' }}><strong>Tech Stack:</strong> React Native, Redux, Firebase</p>
-
-    {/* About */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>About the Client</h3>
+    {/* Overview */}
+    <h2 style={{
+  fontSize: '2.0rem',
+  color: '#003366',
+  fontWeight: '600',
+  marginBottom: '0.75rem',
+  textDecoration: 'underline'
+}}>
+  <em>Olivia</em> – ADHD app
+</h2>
     <p>
-      The client is a female-founded digital health startup committed to improving the lives of women with ADHD through technology.
-      With a strong research foundation in neuroscience and behavioral health, they sought to fill a gap in the wellness app space by focusing on
-      the intersection of hormonal cycles and task management.
+    Attention-deficit hyperactivity disorder (ADHD) is considered to be one of the most common neuropsychiatric disorders of childhood. ADHD was once thought of as a predominantly male disorder. While this may be true for ADHD in childhood, research suggests that the number of women with ADHD may be nearly equal to that of men with the disorder and important sex differences exist in the symptom profile. 
+    Compared to males with ADHD, females with ADHD are more prone to have difficulties with inattentive symptoms than hyperactive and impulsive symptoms, and females often receive a diagnosis of ADHD significantly later than do males. 
+    Emerging evidence suggests differences exist in the neuropathology of ADHD, and there are hormonal factors which may play an important role in understanding ADHD in females. Women with ADHD face an uphill battle because their symptoms are likely misdiagnosed, since​ ADHD looks different in women​ than in men.
+
     </p>
 
-    {/* Challenge */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>Challenge</h3>
+    <h3 style={{ color: '#003366', fontSize: '1.25rem', marginTop: '2rem' }}>Problems Addressed</h3>
     <p>
-      ADHD symptoms in women are often misunderstood and underdiagnosed. The client identified a need for a mobile-first solution that could track
-      emotional and cognitive patterns aligned with hormonal fluctuations, while remaining accessible, private, and clinically informed.
+    The main problem in ADHD is thought to be due to the lack of cognitive functions, lack of attention, impulse control as well as excessive mobility.
+    There are important sex differences in the symptom profile. Compared to males with ADHD, females with ADHD are more prone to have difficulties with inattentive symptoms than hyperactive and impulsive symptoms, and females often receive a diagnosis of ADHD significantly later than do males . As adults, women are at risk for divorce, financial crises, single-parenting a child with ADHD, never completing college, underemployment, substance abuse, eating disorders and constant stress due to difficulty in managing the demands of daily life which
+    overflow into the difficulties of their children.
     </p>
     <p>
-      The solution needed to combine mood tracking, smart planning tools, and personalized insights into a seamless experience, with offline functionality
-      and secure sync for daily use.
+    Research shows that ADHD exacts a greater toll on women than it does on men. Clinicians need a different set of tools for diagnosing and treating the disorder across genders and women deserve a better understanding of how the disorder affects them. Therefore, it is important to improve methods of ADHD recognition in women and develop a diagnostic system that is specific to tackle ADHD clinical symptoms in women.
+
     </p>
 
-    {/* Solution */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>Solution</h3>
+    <h3 style={{ color: '#003366', fontSize: '1.25rem', marginTop: '2rem' }}>Genetic Analysis Overview</h3>
     <p>
-      We built a cross-platform ADHD support app using React Native and Firebase, designed for ease-of-use and rich daily interaction.
-      Users can log mood shifts, focus levels, and physical symptoms tied to their menstrual cycle and receive tailored suggestions.
+    ADHD has been observed to be both familial and heritable. Genes are assumed to explain up to 76% of the variability of ADHD-related symptoms in the population.
+    Data has shown a clear link between ADHD and the presence of VNTR, a dopamine D4 receptor gene, and a dopamine D5 receptor gene microsatellite marker. Thus, these results suggest the importance of examining gene-phenotype links and testing patients for these gene variants.
     </p>
-    <ul>
-      <li>Hormone-cycle calendar with symptom overlays</li>
-      <li>Smart daily to-do planner with adaptive suggestions</li>
-      <li>Push reminders based on predicted focus windows</li>
-      <li>Secure data storage and real-time cloud sync using Firebase</li>
-    </ul>
-
-    {/* Results */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>Results</h3>
     <p>
-      The app launched successfully on both iOS and Android with over 20,000 downloads in its first quarter. User engagement metrics showed
-      3x higher daily retention rates compared to similar wellness apps. The product has since been featured in women’s health publications
-      and is being piloted by mental health clinics as a companion tool for therapy.
+    Olivia is an application for better recognition and treatment of ADHD in women through monitoring certain biomarkers, activity and eye movement.
+    The results of these tests help women and their doctors monitor their performance daily activities. Olivia app has four features to tackle ADHD which are the task reminder, digital biomarker, EOG linked to AI, and raise awareness. 
     </p>
 
-    {/* Technologies */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>Technologies and Tools</h3>
-    <p><strong>Frontend:</strong> React Native, Redux</p>
-    <p><strong>Backend & Storage:</strong> Firebase Realtime DB, Cloud Functions</p>
-    <p><strong>APIs:</strong> HealthKit & Google Fit (integration-ready)</p>
-    <p><strong>Security:</strong> End-to-end encrypted journal entries & private sync</p>
+    {/* App Features Section */}
+    <h3 style={{ color: '#003366', fontSize: '1.25rem', marginTop: '2rem' }}>App Features</h3>
+    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'flex-start', gap: '2rem', marginBottom: '3rem' }}>
+      {/* Left images */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+        <img src={TaskReminderImg} alt="Task Reminder" style={{ width: '200px', borderRadius: '12px' }} />
+        <img src={EOGDoctorImg} alt="EOG" style={{ width: '200px', borderRadius: '12px' }} />
+      </div>
 
-    {/* Divider */}
-    <hr style={{ margin: '3rem 0', borderTop: '1px solid #ccc' }} />
+      {/* Feature Text */}
+      <div style={{ maxWidth: '500px' }}>
+        {[
+          {
+            number: 1,
+            title: 'Process design & automation',
+            heading: 'Task Reminder',
+            text: 'Task reminder helps women with ADHD to be aware of their activities. We use four different strategies for managing tasks: (1) Habits and Routines, (2) reframing challenges and self-evaluation, (3) Symptom-specific strategies, and (4) Planning according to the infradian rhythm.'
+          },
+          {
+            number: 2,
+            title: 'Automated Market Research',
+            heading: 'Digital Biomarker',
+            text: 'Tackles hormone fluctuations during the monthly cycle. By mapping symptoms to the infradian rhythm, women can anticipate flare-ups and work with doctors to optimize care.'
+          },
+          {
+            number: 3,
+            title: 'System Integration',
+            heading: 'AI and EOG',
+            text: 'Uses Electrooculogram (EOG) signals to record eye movement in real-time. Paired with AI, it may support ADHD diagnostics (Fatma et al., 2019; Vakil et al., 2019).'
+          },
+          {
+            number: 4,
+            title: 'Enterprise Security',
+            heading: 'Raising Awareness',
+            text: 'Through articles, forums, and social media, the app builds public awareness of ADHD in women. In-app campaigns support user education and advocacy.'
+          }
+        ].map(({ number, heading, text }) => (
+          <div key={number} style={{ marginBottom: '2rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
+              <CircleNumber number={number} />
+              <h4 style={{ color: '#003366', fontSize: '1.15rem', fontWeight: '700', margin: 0 }}>{heading}</h4>
+            </div>
+            <p style={{ fontSize: '1rem', color: '#000', margin: 0, lineHeight: '1.5' }}>{text}</p>
+          </div>
+        ))}
+      </div>
 
-    {/* === All-in-One Music & Podcast App === */}
-    <h2 style={{ fontSize: '1.5rem', color: '#003366', fontWeight: '600', marginBottom: '0.5rem' }}>
-      All-in-One Music & Podcast App
-    </h2>
-    <p style={{ color: '#555' }}><strong>Category:</strong> Mobile Apps</p>
-    <p style={{ color: '#555', marginBottom: '1rem' }}><strong>Tech Stack:</strong> Flutter, Dart, Spotify API</p>
-
-    {/* About */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>About the Client</h3>
-    <p>
-      A growing media-tech startup wanted to revolutionize how users stream, discover, and interact with audio content.
-      Their goal was to unify music, podcasts, and audio snippets into a single experience, eliminating the need for multiple apps and fragmented playlists.
-    </p>
-
-    {/* Challenge */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>Challenge</h3>
-    <p>
-      Existing platforms treat music and podcasts as separate entities. The client envisioned a unified, smart media player that would integrate
-      various content types, work offline, and allow deep personalization, all in a beautiful and responsive mobile app.
-    </p>
-
-    {/* Solution */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>Solution</h3>
-    <p>
-      Using Flutter for cross-platform development, we delivered a highly performant app that connects to the Spotify API and dynamically builds unified
-      playlists from both music and podcast feeds. Users can stream, download, and customize playback through one clean interface.
-    </p>
-    <ul>
-      <li>Smart unified player for seamless music & podcast integration</li>
-      <li>Offline download support with intelligent storage management</li>
-      <li>Custom playlist builder based on activity, mood, or genre</li>
-      <li>Voice search and media shortcut integrations</li>
-    </ul>
-
-    {/* Results */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>Results</h3>
-    <p>
-      The app achieved over 4.8 stars on both app stores and received recognition for innovation in user experience.
-      Beta users praised its seamless transition between podcast episodes and music tracks, with average session times exceeding 40 minutes.
-      It’s now preparing for global expansion.
-    </p>
-
-    {/* Technologies */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>Technologies and Tools</h3>
-    <p><strong>Frontend:</strong> Flutter (Dart)</p>
-    <p><strong>Backend:</strong> Node.js microservices (Spotify proxy and caching)</p>
-    <p><strong>APIs:</strong> Spotify API, Apple Podcasts (RSS ingestion)</p>
-    <p><strong>Capabilities:</strong> Offline mode, cross-device syncing, media analytics</p>
+      {/* Right images */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+        <img src={ActivityTrackingImg} alt="Activity Tracking" style={{ width: '200px', borderRadius: '12px' }} />
+        <img src={AwarenessForumImg} alt="Awareness Forum" style={{ width: '200px', borderRadius: '12px' }} />
+      </div>
+    </div>
   </div>
 );
 

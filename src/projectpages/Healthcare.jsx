@@ -1,8 +1,28 @@
 import React from 'react';
 import HealthcareImg from '../assets/projectSectionImages/healthcare2.png';
+import CTScanImg from '../assets/screenshots/deeplearning.png';
+import DashboardImg from '../assets/screenshots/healthcareimg.png';
+
+const CircleNumber = ({ number }) => (
+  <span style={{
+    backgroundColor: '#003366',
+    color: 'white',
+    borderRadius: '50%',
+    width: '30px',
+    height: '30px',
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontWeight: 'bold',
+    fontSize: '1rem',
+    marginRight: '0.5rem'
+  }}>
+    {number}
+  </span>
+);
 
 const Healthcare = () => (
-  <div style={{ padding: '2rem', fontFamily: 'Arial, sans-serif', lineHeight: '1.6' }}>
+  <div style={{ padding: '3rem 1.5rem', fontFamily: 'Arial, sans-serif', lineHeight: '1.6', maxWidth: '1200px', margin: '0 auto' }}>
     {/* Hero Image */}
     <img
       src={HealthcareImg}
@@ -12,72 +32,99 @@ const Healthcare = () => (
         maxHeight: '600px',
         objectFit: 'cover',
         borderRadius: '12px',
-        marginBottom: '1.5rem'
+        marginBottom: '1rem'
       }}
     />
 
-    {/* Main Section Title */}
-    <h1 style={{ fontSize: '2.5rem', fontWeight: '700', color: '#000', marginBottom: '0.5rem' }}>
-      Healthcare Technology Projects
+    {/* Header */}
+    <h1 style={{
+      fontSize: '2.5rem',
+      fontWeight: '900',
+      color: '#000',
+      marginBottom: '2rem',
+      fontFamily: 'system-ui, sans-serif'
+    }}>
+      Healthcare
     </h1>
-    
 
-    {/* Divider */}
     <hr style={{ margin: '2rem 0', borderTop: '1px solid #ccc' }} />
 
-    {/* === Crohn Disease Detection Software === */}
-    <h2 style={{ fontSize: '1.5rem', color: '#003366', fontWeight: '600', marginBottom: '0.5rem' }}>
-      Crohn Disease Detection Software
+    {/* Overview */}
+    <h2 style={{
+      fontSize: '2.0rem',
+      color: '#003366',
+      fontWeight: '600',
+      marginBottom: '0.75rem',
+      textDecoration: 'underline'
+    }}>
+      <em>CrohnScan</em> – AI-powered diagnostic platform
     </h2>
-    <p style={{ color: '#555' }}><strong>Industry:</strong> Healthcare</p>
-    <p style={{ color: '#555', marginBottom: '1rem' }}><strong>Tech Stack:</strong> Python, TensorFlow, Flask, AWS</p>
-
-    {/* About */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>About the Client</h3>
     <p>
-      Our client is a leading medical research organization focused on transforming gastrointestinal healthcare using digital technologies and AI.
-      With a global footprint in clinical research and innovation, their mission is to empower gastroenterologists with cutting-edge diagnostic tools
-      and help patients receive accurate, early detection of chronic inflammatory conditions.
+    CrohnScan is a cutting-edge machine learning software developed to address one of the most persistent diagnostic challenges in gastroenterology: distinguishing between ulcerative colitis (UC) and Crohn's disease (CD), the two primary forms of inflammatory bowel disease (IBD). 
+    Both conditions present nearly identical clinical symptoms: abdominal pain, diarrhea, fatigue, and weight loss making accurate diagnosis highly complex and often delayed by over five years on average. This delay can have serious consequences on patient health, treatment planning, and quality of life. 
     </p>
 
-    {/* Challenge */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>Challenge</h3>
+    <h3 style={{ color: '#003366', fontSize: '1.25rem', marginTop: '2rem' }}>Problems Addressed</h3>
     <p>
-      Differentiating between Ulcerative Colitis and Crohn’s Disease presents a major diagnostic challenge due to overlapping symptoms and subjective interpretations.
-      Traditional diagnosis often requires invasive procedures with long turnaround times. The client sought a fast, accurate, and AI-driven solution
-      to analyze non-invasive biomarker data for differential diagnosis — scalable, secure, and suitable for clinical integration.
+    Current diagnostic protocols for IBD rely heavily on clinical observation, colonoscopy, histopathology, and radiological imaging, none of which are independently sufficient to differentiate UC from CD with confidence. 
+    As a result, medical professionals struggle to classify patients accurately and timely. Misclassification can lead to inappropriate treatment, prolonged suffering, and higher risk of complications like strictures, fistulas, or surgery.  
+    </p>
+    <p>
+    CrohnScan solves this through the integration of AI-powered digital biomarkers and real-time image analysis. 
+    It rapidly analyzes CT scan data and provides an automated prediction of disease subtype ulcerative colitis vs. Crohn’s disease within less than 5 minutes. This transforms a historically complex diagnostic pathway into a swift, accurate, and streamlined experience that empowers clinicians with instant results directly from the hospital's imaging systems.  
     </p>
 
-    {/* Solution */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>Solution</h3>
+    <h3 style={{ color: '#003366', fontSize: '1.25rem', marginTop: '2rem' }}>Digital Biomarker Overview</h3>
     <p>
-      We developed a cloud-based diagnostic software platform that leverages digital biomarkers and machine learning to classify IBD subtypes.
-      Built on TensorFlow, the backend ingests biomarker data and runs it through a trained classification model that outputs probability-based
-      diagnoses for Ulcerative Colitis or Crohn's Disease.
-    </p>
-    <ul>
-      <li>Biomarker-based classification engine with 90%+ diagnostic accuracy</li>
-      <li>HIPAA-compliant architecture hosted on AWS</li>
-      <li>Interactive heatmaps and clinician-friendly insights dashboard</li>
-      <li>Integration-ready via secure REST APIs for hospital EMRs</li>
-    </ul>
-
-    {/* Results */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>Results</h3>
-    <p>
-      The solution reduced diagnosis time from several days to just minutes, improving early intervention strategies. Clinics using the tool
-      reported higher diagnostic accuracy and confidence, enabling better treatment matching for IBD patients. With built-in model retraining support,
-      the platform continues to improve in precision as more patient data is processed.
+    CrohnScan is built upon advanced machine learning models trained on thousands of anonymized clinical cases, combining radiographic imaging with digital biomarkers derived from inflammation patterns, tissue morphology, and disease progression indicators. These biomarkers act as a computational fingerprint for each disease subtype, enabling precise classification that goes beyond human pattern recognition. The system is designed to continuously improve with more data and has already demonstrated clinically significant accuracy and reliability in hospital trials.  CrohnScan is a diagnostic ally for gastroenterologists accelerating decision-making, minimizing misdiagnosis, and improving outcomes for patients facing IBD.  
     </p>
 
-    {/* Technologies */}
-    <h3 style={{ color: '#003366', marginTop: '1rem' }}>Technologies and Tools</h3>
-    <p><strong>Tech Stack:</strong> Python, TensorFlow, Flask</p>
-    <p><strong>Infrastructure:</strong> AWS (EC2, S3, CloudWatch)</p>
-    <p><strong>Security & Compliance:</strong> HIPAA-compliant deployment, secure user access, data encryption</p>
+    {/* Image before features */}
+    <div style={{ textAlign: 'center', margin: '3rem 0 2rem' }}>
+      <img src={CTScanImg} alt="CT Scan Integration" style={{ maxWidth: '900px', borderRadius: '8px', width: '100%' }} />
+    </div>
 
-    {/* Optional Divider if more projects are added later */}
-    {/* <hr style={{ margin: '3rem 0', borderTop: '1px solid #ccc' }} /> */}
+    {/* App Features Section */}
+    <h3 style={{ color: '#003366', fontSize: '1.25rem', marginBottom: '2rem' }}>Software Features</h3>
+
+    {/* Feature 1 */}
+    <div style={{ marginBottom: '2rem' }}>
+      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
+        <CircleNumber number={1} />
+        <h4 style={{ color: '#003366', fontSize: '1.15rem', fontWeight: '700', margin: 0 }}>CT Scan Integration</h4>
+      </div>
+      <p style={{ fontSize: '1rem', color: '#000', margin: 0 }}>
+        CrohnScan integrates directly with hospital CT scan systems and PACS to enable frictionless diagnostic analysis, operating silently in the background.
+      </p>
+    </div>
+
+    {/* Feature 2 */}
+    <div style={{ marginBottom: '2rem' }}>
+      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
+        <CircleNumber number={2} />
+        <h4 style={{ color: '#003366', fontSize: '1.15rem', fontWeight: '700', margin: 0 }}>Real-time Disease Detection</h4>
+      </div>
+      <p style={{ fontSize: '1rem', color: '#000', margin: 0 }}>
+      In under 5 minutes, CrohnScan identifies disease subtypes using AI-based pattern recognition and digital biomarker mapping. This cuts down years of diagnostic uncertainty to mere moments.
+
+      </p>
+    </div>
+
+    {/* Image between features 2 and 3 */}
+    <div style={{ textAlign: 'center', margin: '2rem 0' }}>
+      <img src={DashboardImg} alt="Clinical Dashboard" style={{ maxWidth: '800px', borderRadius: '12px', width: '100%' }} />
+    </div>
+
+    {/* Feature 3 */}
+    <div style={{ marginBottom: '3rem' }}>
+      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
+        <CircleNumber number={3} />
+        <h4 style={{ color: '#003366', fontSize: '1.15rem', fontWeight: '700', margin: 0 }}>Clinical Dashboard</h4>
+      </div>
+      <p style={{ fontSize: '1rem', color: '#000', margin: 0 }}>
+      Clinicians receive results in real time via a secure dashboard that provides disease classification, confidence level, and interpretive guidance for treatment decision support.  
+      </p>
+    </div>
   </div>
 );
 

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import MobileImg from '../../assets/projectSectionImages/mobile1.png';
 import HealthcareImg from '../../assets/projectSectionImages/healthcare2.png';
 import MLImg from '../../assets/projectSectionImages/machinelearning1.png';
-import AcademyImg from '../../assets/projectSectionImages/Neema Nelly.png';
+import AcademyImg from '../../assets/projectSectionImages/academy3.png';
 
 const FeatureGrid = ({
   features = [
@@ -14,7 +14,7 @@ const FeatureGrid = ({
       image: MobileImg,
       title: 'Mobile Apps',
       description: 'Custom-built iOS and Android apps designed for usability and scalability',
-      link: '/mobile-apps'  // now links to a dedicated page
+      link: '/mobile-apps'
     },
     {
       image: HealthcareImg,
@@ -24,7 +24,7 @@ const FeatureGrid = ({
     },
     {
       image: MLImg,
-      title: 'Machine Learning',
+      title: 'Software Development',
       description: 'Data platforms for process automation, real-time insights, and optimization',
       link: '/machine-learning'
     },
@@ -32,7 +32,7 @@ const FeatureGrid = ({
       image: AcademyImg,
       title: 'Academy',
       description: 'NEEMA AI training for ethical AI covering algorithmic privacy and governance',
-      link: '/academy'
+      link: 'https://neemaai.io'  // External link
     },
   ],
   textColor = '#225f7c',
@@ -50,15 +50,35 @@ const FeatureGrid = ({
           We’ve built powerful AI-driven solutions from LLM-powered chatbots to machine learning–based real-time analytics platforms that transform how organizations make decisions and operate
         </p>
       </div>
+
       <div className={styles.gridContainer}>
-        {features.map((item, index) => (
-          <Link to={item.link} className={styles.card} key={index}>
-            <img src={item.image} alt={item.title} className={styles.featureImage} />
-            <div className={styles.title}>{item.title}</div>
-            <div className={styles.description}>{item.description}</div>
-            <div className={styles.arrow}>→</div>
-          </Link>
-        ))}
+        {features.map((item, index) => {
+          const isExternal = item.link.startsWith('http');
+          const CardContent = (
+            <>
+              <img src={item.image} alt={item.title} className={styles.featureImage} />
+              <div className={styles.title}>{item.title}</div>
+              <div className={styles.description}>{item.description}</div>
+              <div className={styles.arrow}>→</div>
+            </>
+          );
+
+          return isExternal ? (
+            <a
+              href={item.link}
+              className={styles.card}
+              key={index}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {CardContent}
+            </a>
+          ) : (
+            <Link to={item.link} className={styles.card} key={index}>
+              {CardContent}
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

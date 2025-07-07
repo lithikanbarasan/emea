@@ -63,7 +63,7 @@
 .featureImage {
   width: 100%;
   max-width: 210px;
-  height: 110px;              /* smaller height = more zoomed out */
+  height: 150px;              /* smaller height = more zoomed out */
   object-fit: cover;
   object-position: center 20%; /* shift focus down a bit */
   border-radius: 12px;
