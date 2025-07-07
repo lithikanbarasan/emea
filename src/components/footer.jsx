@@ -7,12 +7,12 @@ function Footer() {
   return (
     <footer className={styles.footer}>
   <div className={styles.footerContent}>
-    <div className={styles.left}>
+    <div className={styles.top}>
       <Link to="/" className={styles.logo}>EMEA Venture Builder</Link>
-      <Link to="/contact" className={styles.contactButton}>Contact Us</Link>
     </div>
 
-    <div className={styles.center}>
+    <div className={styles.bottom}>
+      <Link to="/contact" className={styles.contactButton}>Contact Us</Link>
       <div className={styles.socialIcons}>
         <a href="https://www.linkedin.com/company/emea-venture/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className={styles.icon} />

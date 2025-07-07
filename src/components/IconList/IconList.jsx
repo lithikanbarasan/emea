@@ -16,7 +16,7 @@ with an array of these creating the IconList component
 
 const IconList = ({
     title="Example Title",
-    textColor='#0061f2',
+    textColor='#0B3B7B',
     listItems=[],
 }) => {
     return (
