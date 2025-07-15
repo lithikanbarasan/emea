@@ -1,7 +1,7 @@
 .container {
   display: flex;
-  flex-direction: column;
-  background-color: #0c2a5d; /* Entire card has a navy background */
+  flex-direction: row;
+  background-color: #0c2a5d; /* dark navy */
   color: white;
   border-radius: 12px;
   overflow: hidden;
@@ -10,31 +10,29 @@
   max-width: 1150px;
 }
 
-/* === IMAGE === */
 .imageSection {
-  width: 100%;
+  flex: 1;
 }
 
 .image {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
   object-fit: cover;
-  border-radius: 0;
 }
 
-/* === TEXT === */
 .textSection {
-  padding: 2rem 1.5rem;
-  text-align: center;
-  background-color: transparent; /* unified with .container background */
+  flex: 2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .quote {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .name {
@@ -57,40 +55,38 @@
 
 .founder {
   width: fit-content;
-  margin: 1rem auto 0;
+  justify-items:center;
 }
 
-/* === MOBILE === */
+/* Mobile */
 @media screen and (max-width: 768px) {
   .container {
-    margin: 2rem 1rem;
-    border-radius: 12px;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 1.5rem;
   }
 
   .imageSection {
     width: 100%;
-    margin: 0;
-    padding: 0;
   }
-  
+
   .image {
     width: 100%;
     height: auto;
-    display: block;
     object-fit: cover;
-    margin: 0;
-    padding: 0;
-    border: none;
-    border-radius: 0;
   }
-  
 
   .textSection {
-    padding: 2rem 1.2rem;
+    padding: 1.5rem 1.2rem;
+    align-items: center;
   }
 
   .quote {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+
+  .founder {
+    margin-top: 1rem;
   }
 
   .icon {
