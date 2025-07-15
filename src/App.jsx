@@ -142,7 +142,7 @@ function App() {
         <Route path="/" element={
           <>
             <MainPage />
-            <div>
+            <div style={{justifyContent: 'center'}}>
               <IconListPage 
               listItems={listItems} 
               title={title} 
