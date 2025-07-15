@@ -1,11 +1,21 @@
-html, body, #root {
-    height: 100%;
-    margin: 0;
+/* App.css — Global Reset */
+* {
+    box-sizing: border-box;
   }
+  
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
 
   body {
     margin: 0;
     padding: 0;
+    width: 100vw;
     overflow-x: hidden;
   }
   
@@ -23,3 +33,44 @@ html, body, #root {
   html {
     scroll-behavior: smooth;
   }
+
+  /* App.css */
+
+@media screen and (max-width: 768px) {
+    .iconListContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      gap: 2rem;
+    }
+  
+    .iconItem {
+      width: 100%;
+    }
+  
+    .textContent {
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .featureGrid,
+    .main-content,
+    .ceo-section,
+    .tagList {
+      padding: 1rem;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .featureGridItem {
+      flex: 1 1 100%;
+      margin-bottom: 1rem;
+    }
+  
+    img {
+      max-width: 90vw;
+      height: auto;
+    }
+  }
+  

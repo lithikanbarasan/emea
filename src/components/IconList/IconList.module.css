@@ -9,3 +9,62 @@
     margin-left: 20px;
     margin-bottom: 30px;
 }
+
+.imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .image {
+    max-width: 90vw;
+    height: auto;
+  }
+  
+  /* IconListPage.module.css */
+
+.outerContainer {
+    padding: 2rem;
+  }
+  
+  .iconListPage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .flipped {
+    flex-direction: row-reverse;
+  }
+  
+  .normal {
+    flex-direction: row;
+  }
+  
+  .image {
+    flex-shrink: 0;
+  }
+  
+  .list {
+    flex: 1;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .iconListPage {
+      flex-direction: column !important; /* override flipped/normal */
+      text-align: center;
+    }
+  
+    .image {
+      width: 90% !important;
+      margin: 0 auto 1rem auto !important;
+    }
+  
+    .list {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+  
