@@ -93,3 +93,25 @@
   color: #225f7c;
   margin-top: auto;         /* pushes arrow to bottom */
 }
+
+@media screen and (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .card {
+    max-height: none;
+    padding: 1.5rem 1rem;
+  }
+
+  .featureImage {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .description {
+    padding: 0;
+  }
+}
+
