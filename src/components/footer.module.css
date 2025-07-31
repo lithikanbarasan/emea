@@ -1,107 +1,122 @@
 .footer {
-    background-color: #0c2a5d;
-    color: #fff;
-    padding: 2.5rem 1rem;
-  }
-  
-  .footerContent {
+  background-color: #0c2a5d;
+  color: #fff;
+  padding: 2.5rem 1rem;
+}
+
+.footerContent {
   max-width: 1200px;
-  padding: 0 1rem;
   margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+/* LEFT SECTION: Logo and Address */
+.leftSection {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  flex: 0 0 auto;
 }
-  
-  .logo {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.3rem;
-  }
-  
-  .top {
-    display: flex;
-    flex-direction: column;
-    align-items:left;
-    gap: 1.5rem;
-    width: 100%
-  }
 
-  .bottom {
-  display: flex;
-  flex-direction: row;
-  gap: 0.3rem;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 1rem 0; /* Only vertical margin */
+.logo {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.3rem;
 }
-  
-  .right {
-    display: flex;
+
+.address {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+/* CENTER SECTION: Social Icons */
+.centerSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.icon {
+  color: #cbd5e1;
+  font-size: 2.0rem;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #ffffff;
+}
+
+/* RIGHT SECTION: Copyright */
+.rightSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  margin-top: 1.5rem; /* ADDED: Pushes it to align with address */
+}
+
+
+.copyright {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+/* BUTTON STYLE (if used elsewhere in footer) */
+.contactButton {
+  background-color: #ffffff;
+  color: #0c2a5d;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+}
+
+.contactButton:hover {
+  background-color: #cce4ff;
+  color: #023e8a;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
     align-items: center;
-    gap: 1.2rem;
-  }
-  
-  .socialIcons {
-    display: flex;
-    gap: 1.0rem;
-    margin-left: 6.0rem;
-  }
-  
-  .icon {
-    color: #cbd5e1;
-    font-size: 2.0rem;
-    transition: color 0.3s ease;
-  }
-  
-  .icon:hover {
-    color: #ffffff;
-  }
-  
-  .contactButton {
-    background-color: #ffffff;
-    color: #0c2a5d;
-    padding: 0.5rem 1.2rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease, color 0.3s ease;
     text-align: center;
   }
-  
-  .contactButton:hover {
-    background-color: #cce4ff;
-    color: #023e8a;
-  }
-  
-  .copyright {
-    font-size: 0.85rem;
-    color: #cbd5e1;
+
+  .leftSection,
+  .centerSection,
+  .rightSection {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    text-align: center;
   }
 
-  @media screen and (max-width: 768px) {
-    .bottom {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .contactButton {
-      width: 100%;
-      max-width: 250px;
-      margin-bottom: 1rem;
-    }
-  
-    .copyright {
-      text-align: center;
-      margin-top: 1rem;
-    }
-  
-    .socialIcons {
-      margin-left: 0;
-    }
+  .rightSection {
+    margin-bottom: 0;
   }
-  
+
+  .contactButton {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 1rem;
+  }
+
+  .copyright {
+    margin-top: 1rem;
+  }
+}

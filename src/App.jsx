@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/IconListPage/Home.jsx';
-import Blog from './pages/IconListPage/Blog.jsx';
-import Contact from './pages/IconListPage/ContactUs.jsx';
 
 import './App.css';
 import Header from "./components/header.jsx"; 
@@ -123,8 +121,8 @@ function App() {
         } />
 
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<Blog />} />
+        {/* <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} /> */}
 
         <Route path="/mobile-apps" element={<MobileApps />} />
         <Route path="/healthcare" element={<Healthcare />} />

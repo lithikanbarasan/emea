@@ -26,7 +26,7 @@ const MainPage = () => {
         We specialize in full-cycle software development from designing intuitive mobile apps to building powerful automation such as machine learning, predictive systems, data analytics. We turn your idea into scalable, secure, smart, and innovative solutions
         </p>
         <div className={styles.buttonGroup}>
-        <Link to="/contact" className={styles.secondary}>CONTACT US</Link>
+        {/* <Link to="/contact" className={styles.secondary}>CONTACT US</Link> */} 
         </div>
       </div>
     </div>

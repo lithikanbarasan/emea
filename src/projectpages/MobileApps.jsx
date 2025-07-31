@@ -2,7 +2,7 @@ import React from 'react';
 import MobileAppsImg from '../assets/projectSectionImages/mobile1.png';
 import TaskReminderImg from '../assets/screenshots/mobpic1.png';
 import ActivityTrackingImg from '../assets/screenshots/mobpic2.png';
-import EOGDoctorImg from '../assets/screenshots/mobpic1.png';
+import EOGDoctorImg from '../assets/screenshots/mobpic3.png';
 import AwarenessForumImg from '../assets/screenshots/mobpic4.png';
 
 const CircleNumber = ({ number }) => (
