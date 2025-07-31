@@ -1,5 +1,5 @@
 import React from 'react';
-import HealthcareImg from '../assets/projectSectionImages/healthcare2.png';
+import HealthcareImg from '../assets/projectSectionImages/pinkhealthcare.png';
 import CTScanImg from '../assets/screenshots/deeplearning.png';
 import DashboardImg from '../assets/screenshots/healthcareimg.png';
 
@@ -105,7 +105,7 @@ const Healthcare = () => (
         <h4 style={{ color: '#003366', fontSize: '1.15rem', fontWeight: '700', margin: 0 }}>Real-time Disease Detection</h4>
       </div>
       <p style={{ fontSize: '1rem', color: '#000', margin: 0 }}>
-      In under 5 minutes, CrohnScan identifies disease subtypes using AI-based pattern recognition and digital biomarker mapping. This cuts down years of diagnostic uncertainty to mere moments.
+      CrohnScan identifies disease subtypes with AI-based pattern recognition/ digital biomarker mapping. This cuts down years of diagnostic uncertainty to moments.
 
       </p>
     </div>
@@ -122,7 +122,7 @@ const Healthcare = () => (
         <h4 style={{ color: '#003366', fontSize: '1.15rem', fontWeight: '700', margin: 0 }}>Clinical Dashboard</h4>
       </div>
       <p style={{ fontSize: '1rem', color: '#000', margin: 0 }}>
-      Clinicians receive results in real time via a secure dashboard that provides disease classification, confidence level, and interpretive guidance for treatment decision support.  
+      Clinicians receive results in real time via a secure dashboard that provides disease classification, confidence level, and guidance for treatment decision support.  
       </p>
     </div>
   </div>

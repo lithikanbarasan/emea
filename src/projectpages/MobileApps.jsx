@@ -92,7 +92,7 @@ const MobileApps = () => (
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center', // <-- Vertically centers the text column
-      gap: '2rem',
+      gap: '6rem',          // increased spacing between image columns and the text column
       flexWrap: 'wrap',
       marginBottom: '3rem',
       textAlign: 'left'
@@ -114,12 +114,12 @@ const MobileApps = () => (
           {
             number: 2,
             heading: 'Digital Biomarker',
-            text: 'Tackles hormone fluctuations during the monthly cycle. By mapping symptoms to the infradian rhythm, women can anticipate flare-ups and work with doctors to optimize care.'
+            text: 'Tackles hormone fluctuations during the monthly cycle. By mapping symptoms to the infradian rhythm, women can anticipate flare-ups.'
           },
           {
             number: 3,
             heading: 'AI and EOG',
-            text: 'Uses Electrooculogram (EOG) signals to record eye movement in real-time. Paired with AI, it may support ADHD diagnostics (Fatma et al., 2019; Vakil et al., 2019).'
+            text: 'Uses Electrooculogram (EOG) signals to record eye movement in real-time. Paired with AI, it may support ADHD diagnostics.'
           },
           {
             number: 4,

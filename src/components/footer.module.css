@@ -9,45 +9,54 @@
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column; /* two rows: logoRow, footerRow */
   gap: 1rem;
-  flex-wrap: nowrap;
 }
 
-/* LEFT SECTION: Logo and Address */
-.leftSection {
+/* Row 1: Powered by + logo */
+.logoRow {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
 }
 
-.logo {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
+.logoText {
+  font-weight: 700;
   font-size: 1.3rem;
+  color: #ffffff;
 }
 
-.address {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  color: #cbd5e1;
+.logoImage {
+  height: 36px;
+  width: auto;
+  display: block;
 }
 
-/* CENTER SECTION: Social Icons */
+/* Row 2: Address (left) • Icons (center) • Copyright (right) */
+.footerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* left, center, right */
+  width: 100%;
+  gap: 1rem;
+}
+
+.footerRow p {
+  margin: 0;
+}
+
 .centerSection {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  flex: 1;
+  min-width: 120px; /* keeps icons centered when text is long */
 }
 
 .icon {
   color: #cbd5e1;
-  font-size: 2.0rem;
+  font-size: 2rem;
   transition: color 0.3s ease;
 }
 
@@ -55,68 +64,22 @@
   color: #ffffff;
 }
 
-/* RIGHT SECTION: Copyright */
-.rightSection {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  flex: 0 0 auto;
-  white-space: nowrap;
-  margin-top: 1.5rem; /* ADDED: Pushes it to align with address */
-}
-
-
-.copyright {
+/* Shared styling for address and copyright */
+.rights {
   font-size: 0.85rem;
   color: #cbd5e1;
+  line-height: 1.4;
 }
 
-/* BUTTON STYLE (if used elsewhere in footer) */
-.contactButton {
-  background-color: #ffffff;
-  color: #0c2a5d;
-  padding: 0.5rem 1.2rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  text-align: center;
-}
-
-.contactButton:hover {
-  background-color: #cce4ff;
-  color: #023e8a;
-}
-
-/* RESPONSIVE DESIGN */
+/* Responsive: stack the second row on small screens */
 @media screen and (max-width: 768px) {
-  .footerContent {
+  .footerRow {
     flex-direction: column;
-    align-items: center;
+    gap: 0.5rem;
     text-align: center;
   }
 
-  .leftSection,
-  .centerSection,
-  .rightSection {
-    width: 100%;
-    align-items: center;
+  .centerSection {
     justify-content: center;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  .rightSection {
-    margin-bottom: 0;
-  }
-
-  .contactButton {
-    width: 100%;
-    max-width: 250px;
-    margin-bottom: 1rem;
-  }
-
-  .copyright {
-    margin-top: 1rem;
   }
 }

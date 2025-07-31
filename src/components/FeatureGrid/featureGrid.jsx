@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 // Images for each category
 import MobileImg from '../../assets/projectSectionImages/mobile1.png';
-import HealthcareImg from '../../assets/projectSectionImages/healthcare2.png';
+import HealthcareImg from '../../assets/projectSectionImages/pinkhealthcare.png';
 import MLImg from '../../assets/projectSectionImages/machinelearning1.png';
 import AcademyImg from '../../assets/projectSectionImages/academy3.png';
 
@@ -26,7 +26,7 @@ const FeatureGrid = ({
       image: MLImg,
       title: 'Software Development',
       description: 'Data platforms for process automation, real-time insights, and optimization',
-      link: '/machine-learning'
+      link: '/software-development'
     },
     {
       image: AcademyImg,

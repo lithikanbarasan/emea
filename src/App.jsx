@@ -120,13 +120,12 @@ function App() {
           </>
         } />
 
-        <Route path="/" element={<Home />} />
-        {/* <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<Blog />} /> */}
+        {/* Removed duplicate "/" route that made the one above unreachable */}
+        {/* <Route path="/" element={<Home />} /> */}
 
         <Route path="/mobile-apps" element={<MobileApps />} />
         <Route path="/healthcare" element={<Healthcare />} />
-        <Route path="/machine-learning" element={<MachineLearning />} />
+        <Route path="/software-development" element={<MachineLearning />} />
         <Route path="/academy" element={<Academy />} />
       </Routes>
 

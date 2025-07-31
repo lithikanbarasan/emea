@@ -144,7 +144,7 @@ const MachineLearning = () => (
         <h4 style={{ color: '#003366', fontSize: '1.15rem', fontWeight: '700', margin: 0 }}>Privacy-Safe Use</h4>
       </div>
       <p style={{ fontSize: '1rem', color: '#000', margin: 0 }}>
-      ProfilingCheck focuses only on publicly available digital footprints, protecting individual privacy while delivering insightful, ethical evaluations for recruitment, partnership, and profiling.  
+      ProfilingCheck focuses only on publicly available digital footprints, protecting individual privacy, ethical evaluations for recruitment, partnership, and profiling.  
       </p>
     </div>
   </div>
