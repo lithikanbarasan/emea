@@ -32,7 +32,7 @@ const FeatureGrid = ({
       image: AcademyImg,
       title: 'Academy',
       description: 'NEEMA AI training for ethical AI covering algorithmic privacy and governance',
-      link: 'https://neemaai.io'  // External link
+      link: 'https://neemaai.io/course'  // External link
     },
   ],
   textColor = '#225f7c',

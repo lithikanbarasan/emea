@@ -22,7 +22,7 @@ function Header() {
 
         {/* External link for Academy */}
         <a
-          href="https://neemaai.io"
+          href="https://neemaai.io/course"
           className={styles.navLink}
           target="_blank"
           rel="noopener noreferrer"
